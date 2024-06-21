@@ -16,19 +16,10 @@ services:
       DATABASE_NAME: testdb
     depends_on:
       - mysql
-    networks:
-      - backend
-      - frontend
 
   mysql:
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: testdb
-    networks:
-      - backend
-
-networks:
-  backend:
-  frontend:
 
