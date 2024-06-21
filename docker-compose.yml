@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   app:
-    image: tp2
+    image: ma_super_app
     build:
       context: .
       dockerfile: Dockerfile
